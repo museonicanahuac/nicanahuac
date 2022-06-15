@@ -1,0 +1,550 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Deca:wght@200&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Sofia&effect=outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+html {
+  background-color: #81B8EF;
+}
+
+body {
+  background-color: #ffffff;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 20px;
+  border: 10px solid black;
+}
+
+/*FOR HEADER GRID*/
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px;
+  background: linear-gradient(#0da1ec, white);
+  align-items: center;
+}
+
+.logo-box {
+  grid-column: 1/2;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.banner-box {
+  grid-column: 2/5;
+  margin-top: 10px;
+}
+
+.navigation-head {
+  background-color: #283350;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.action {
+  grid-column: 5/6;
+  margin-top: 18px;
+  margin-right: 5px;
+  color: #210070;
+  font-size: 100%;
+  height: 180px;
+  font-family: "Sofia", Verdana, cursive;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 50px 50px 50px 50px;
+  padding: 0.5em;
+  background: linear-gradient(#F4B41A, white);
+  /*border: 1px solid #a43312;*/
+}
+
+.nav-box {
+  grid-column: 1/6;
+  height: 100px;
+}
+
+.n1 {
+  background: #283350;
+  height: 50px;
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+}
+
+.n2 {
+  background: #FAF5F0;
+  margin-left: 30px;
+  color: blue;
+}
+
+span:hover {
+  background: black;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #00FF00;
+  background: black;
+}
+
+/*FOR HOME GRID*/
+.home-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 150px 150px 350px 250px;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(#0da1ec, white);
+}
+
+.home-headline-1 {
+  background: linear-gradient(#143D59, white);
+  font-family: "Audiowide", Arial, cursive;
+  color: black;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-top: -60px;
+  text-align: center;
+}
+
+.home-paragraph-1 {
+  font-family: Open Sans, sans-serif;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: 65px;
+  width: 120%;
+  background: #FAF5F0;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(#F4B41A, white);
+}
+
+.home-right-img {
+  grid-column: 1/2;
+  grid-row: 3;
+  background: #FAF5F0;
+  margin-top: 200px;
+  width: 95%;
+  margin-left: 5px;
+}
+
+.home-headline-2 {
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 99%;
+  margin-top: -200px;
+  text-align: center;
+}
+
+.home-paragraph-2 {
+  font-family: Open Sans, sans-serif;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 98%;
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.home-left-img {
+  grid-column: 2/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100px;
+  margin-top: -170px;
+  margin-left: 25px;
+}
+
+/*.home-paragraph-3 {
+  font-family: Open Sans, sans-serif;
+  grid-column: 2/2;
+  grid-row: 4/4;
+  width: 98%;
+  height: 100px;
+  margin-top: 5px;
+
+  /*margin-left: 0px;
+}*/
+
+.home-headline-3 {
+  grid-column: 1/3;
+  grid-row: 4/4;
+  background-color: #252850;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  font-family: "Sofia", Verdana, cursive;
+  width: 98%;
+  height: 20%;
+  margin-top: 85px;
+  margin-left: 10px;
+}
+
+.home-paragraph-4 {
+  font-family: Open Sans, sans-serif;
+  grid-column: 1/3;
+  grid-row: 5/5;
+  width: 98%;
+  margin-top: -60px;
+  margin-left: 10px;
+}
+/*F4B41A*/
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  list-style: none; /* removes the bullets! */
+  margin: 0px;
+  border: 1px solid lightgray;
+  background-color: #FAF5F0;
+  padding: 10px;
+  color: blue;
+}
+
+.icon-element {
+  grid-column: 8/10;
+}
+
+.text-footer {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: left;
+  color: blue;
+}
+
+.home-banner {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.aboutus-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 150px 150px 350px;
+  align-items: center;
+}
+
+.product-grid{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 280px 280px;
+  align-items: center;
+  margin-left: 15px;
+}
+
+
+.aboutus-paragraph-1 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 90%;
+  height: 95px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.aboutus-headline-2 {
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 99%;
+  height: 85px;
+  margin-left: -10px;
+  margin-top: -125px;
+  text-align: center;
+}
+
+.aboutus-paragraph-2 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 98%;
+  height: 100px;
+  margin-top: 80px;
+  /*margin-left: 0px;*/
+}
+
+.sendmessage-paragraph-2 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 98%;
+  height: 100px;
+  margin-top: 80px;
+  /*margin-left: 0px;*/
+}
+
+.home-banner-sendmessage {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.sendmessage-headline-2 {
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 99%;
+  height: 85px;
+  margin-left: -10px;
+  margin-top: -80px;
+  text-align: center;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+form {
+  /* Center the form on the page */
+  /*margin: 0 auto;*/
+  width: 550px;
+
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  background: blue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*form li + li {
+  margin-top: 1em;
+}*/
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 13fr);
+
+  margin: auto;
+  margin-top: -70px;
+  background: #FAF5F0;
+}
+
+/*LABELS*/
+.messa {
+  grid-column: 1/3;
+  /*grid-row: 2/3;*/
+  text-align: left;
+  width: 500px;
+}
+
+label {
+  /* Uniform size & alignment */
+  /*display: inline-block;*/
+  width: 250px;
+  box-sizing: border-box;
+  text-align: left;
+  color: blue;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 250px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid purple;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+  background: lightblue;
+}
+
+select {
+  width: 250px;
+}
+
+select:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+  background: lightblue;
+  font: 1em sans-serif;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+.button-send {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+
+  margin-left: 5px;
+  font-size: 15px;
+  margin-left: 250px;
+  grid-row: 5/5;
+  grid-column: 2/3;
+  width: 100px;
+}
+
+/*MEDIA CARD*/
+
+img {
+  max-width: 90%;
+}
+
+/*.card-newmoto {
+  height: 380px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 8px;
+  background: linear-gradient(#F4B41A, white);
+  font-family: sans-serif, Arial, Helvetica;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}*/
+
+.card-newmoto:hover {
+  transform: translateY(5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  z-index: -3;
+}
+
+.card-banner {
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+  margin-left: 45px;
+}
+
+.card-product{
+  margin-top: 150px;
+  width: 280px;
+  height: 380px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 8px;
+  background: linear-gradient(#F4B41A, white);
+  font-family: sans-serif, Arial, Helvetica;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.card-product:hover {
+  transform: translateY(5px);
+}
+
+.card-banner:hover {
+  transform: translateY(5px);
+}
+
+.card {
+  width: 320px;
+  height: 450px;
+  box-shadow: 1px 1px 4px 1px #888;
+  border-radius: 8px;
+  background: linear-gradient(#F4B41A, white);
+  font-family: sans-serif, Arial, Helvetica;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.viewButton {
+  background: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.editButton {
+  border-radius: 5px;
+  background: white;
+
+  width: 80px;
+  height: 40px;
+  margin-left: -5px;
+}
+
+p {
+  margin-left: 10px;
+}
+
+/*.card-body {
+  background-color: #ffffff;
+}*/
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  color: #6a6a6a;
+  margin-top: 100px;
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+}
+
+.footer-card {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 50px 10px;
+  margin-left: 70px;
+}
+
+button:hover {
+  color: black;
+  font-size: 15px;
+  background: lightgrey;
+}
