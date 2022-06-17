@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museo Nicanahuac - Nicaragua</title>
+    <meta
+      name="description"
+      content="Este sitio conlleva el desarrollo de nuetro projecto de Feria
+       Científica llamado Museo Nicanahuac - Intae Mercantil 2022" />
+    
+    <link rel="icon" href="images/icoMuseo.ico">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+  <body>
+    <div id="content">
+      <header>
+        <div class="header-grid">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="images/logNic.PNG"
+                    alt="logo_museo"
+                    width="200"
+                    />
+                </a>
+            </div>
+            <div class="link-header">
+                <span class="navigation-head">
+                    <a class="n1" href="historia/historia.html"> |Historia de Nicaragua |</a>
+                </span>
+                <span class="navigation-head">
+                    <a class="n1" href="artesania/artesania.html"> |Artesanía |</a>
+                </span>
+                <span class="navigation-head">
+                    <a class="n1" href="origen/origen.html">|Origen Nicanahuac |</a>
+                </span>
+                <span class="navigation-head">
+                    <a class="n1" href="otros/contactarnos.html">|Contáctenos ya |</a>
+                </span>
+                <span class="navigation-head">
+                    <a class="n1" href="otros/acerca.html"> Acerca</a>
+                </span>
+            </div>    
+            <strong class="text1"> Conservando Nuestra Historia</strong>
+        </div>
+    </header>
+        <hr>
+
+      <main>
+        <div class="aboutus-grid">
+          <img
+            class="home-banner-sendmessage"
+            src="https://cdn.glitch.me/2571564b-671b-4e21-bf05-5cff35eaa8b6%2Ffaq_images2.jpg?v=1637463729312"
+            alt="banner"
+            width="900"
+          />
+
+          <p class="aboutus-paragraph-1">
+            <strong>¡Nota importante! </strong> El siguiente formulario
+            le ayudará a PONERSE EN CONTRACTO con nostros. 
+            Favor llene los datos solicitados. Esto datos serán confidenciales
+            y cuidadosamente protegidos.
+            Puede hacernos una pregunta, transmitir alguna duda o simplemente
+            compartir algún comentario o sugerencia para nuestro sitio o 
+            para nuestro tipo de servicio ofrecido en este museo. <br />
+            <br />
+            Gracias por contactarse con nosotros. 
+          </p>
+
+          <h2 class="sendmessage-headline-2">
+            Por favor llene los datos y presione el botón que dice ENVIAR MENSAJE.
+          </h2>
+
+        <div id="feedback">  </div>
+            <form class="form-grid" action="/my-handling-form-page" method="post">
+                <label for="name">Nombres:</label>
+                <label for="lastname">Apellidos:</label>
+
+                <input type="text" id="name" name="user_name" />
+                <input type="text" id="lastname" name="user_lastnamename" />
+
+                <label for="phonenumber">Número telefónico:</label>
+                <label for="mail">E-mail:</label>
+                <input type="text" id="phonenumber" name="user_phnomber" />
+                <input type="email" id="mail" name="user_email" />
+
+                <label for="state">País:</label>
+                <label for="city">Ciudad:</label>
+                
+                <select id="state" name="user_country">
+                    <option>Mexico</option>
+                    <option selected="selected">USA</option>
+                    <option>Nicaragua</option>
+                    <option>Argentina</option>
+                    <option>Costa Rica</option>
+                    <option>Guatemala</option>
+                    <option>Honduras</option>
+                    <option>Colombia</option>
+                    <option>Brazil</option>
+                    <option>Continente: América del sur</option>
+                    <option>Continente: Africa</option>
+                    <option>Continente: Asia</option>
+                </select>
+
+                <input type="text" id="city" name="user_city" />
+
+                <label for="birth">Cumpleaños:</label> <br />
+                <input type="date" id="birth" name="user_birthday" /> <br />
+
+                <label for="msg">Mensaje:</label> <br />
+                <textarea class="messa" id="msg" name="user_message"></textarea>
+            </form>
+            <button class="button-send" type="submit">ENVIAR MENSAJE</button>
+       
+            
+          
+          <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById("feedback");
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener("submit", function(e) {
+              // stop the form from doing the default action
+              e.preventDefault();
+              // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+              feedbackElement.innerHTML =
+                "GRACIAS " + formElement.user_name.value +
+                "! GRACIAS POR ENVIAR SU MENSAJE. Nos pondremos en contracto con tido lo más pronto posible!";
+              // make the feedback element visible.
+              feedbackElement.style.display = "block";
+              // add a class to move everything down so our message doesn't cover it.
+              document.body.classList.toggle("moveDown");
+            });
+          </script>
+        </div>
+      </main>
+      <hr />
+
+      <br>
+        <footer class="grid-footer">
+          <div class="text-footer">
+            <p>
+              &copy; <strong>2022 Museo Nicanahuac </strong> || Made by Ing. Leonard Salazar || Nicaragua, Chinandega 
+            </p>
+          </div>
+
+          <div class="icon-footer">
+            <a target="_blank" href="https://www.facebook.com/">
+              <img
+                src="https://cdn.glitch.me/d71b2bea-4b3f-41c2-b3fb-88e51cf743d4%2Ffacebook.png?v=1633842925542"
+                height="50"
+                alt="Facebook icon" />
+            </a>
+  
+            <a target="_blank" href="https://www.pinterest.com/">
+              <img
+                src="https://cdn.glitch.me/d71b2bea-4b3f-41c2-b3fb-88e51cf743d4%2Fpinterest.png?v=1633842933617"
+                height="50"
+                alt="Pinteres icon" />
+            </a>
+  
+            <a target="_blank" href="https://twitter.com/">
+              <img
+                src="https://cdn.glitch.me/d71b2bea-4b3f-41c2-b3fb-88e51cf743d4%2Ftwitter.png?v=1633842939873"
+                height="50"
+                alt="Twitter icon" />
+            </a>
+          </div>
+        </footer>
+    </div>
+  </body>
+</html>

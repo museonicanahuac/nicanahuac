@@ -67,7 +67,7 @@ body {
 .home-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
   /*grid-template-columns: 30% 70%;*/
   /*grid-template-rows: 150px 150px 350px 250px;*/
   /*align-items: center;*/
@@ -242,28 +242,37 @@ a:hover {
   color: black;
 }
 
-.text-footer {
-  width: 100%;
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-left: 10px;
-  margin-top: -400px;
+
   text-align: center;
-  color: blue;
-  background: #F4B41A;
+  color: #ffffff;
+  background-color: darkslategrey;
+  padding: 5px;
 }
 
-.icon-element {
-  grid-column: 8/10;
-  text-align: center;
-  background: #0da1ec;
+.text-footer {
+  margin-left: 10px;
+  margin-top: 20px;
+  grid-column: 1/4;
+  padding: 0px;
 }
 
-n1 {
+.icon-footer {
+  grid-column: 4/6;
+  background: #000000;
+
+}
+
+/*n1 {
   background: #283350;
   height: 50px;
   margin-top: 35px;
   text-align: center;
-  color: white;
-}
+  color: rgb(140, 15, 15);
+}*/
 
 .text-welcome{
   position: absolute;
@@ -296,10 +305,302 @@ n1 {
   grid-row: 3/4;
   grid-column: 3/6;
   
-  height: 80%;
+  /*height: 80%;*/
   margin-left: -150px;
   margin-right: 10px;
   font-size: 20px;
   font-family: "Sofia", Verdana, cursive;
   text-align: justify;
+}
+
+/*FOR THE ABOUT US PAGE*/
+.aboutus-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 150px 150px 350px;
+  align-items: center;
+}
+
+.home-banner {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.aboutus-paragraph-1 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 90%;
+  height: 95px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.home-right-img {
+  grid-column: 1/2;
+  grid-row: 3;
+  background: #FAF5F0;
+  margin-top: 200px;
+  width: 95%;
+  margin-left: 5px;
+}
+
+.aboutus-headline-2 {
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100px;
+  margin-left: -10px;
+  margin-top: -125px;
+  text-align: center;
+}
+.aboutus-paragraph-2 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 98%;
+  height: 100px;
+  margin-top: 90px;
+  /*margin-left: 0px;*/
+}
+
+
+/*FOR THE CONTACT US*/
+.aboutus-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 150px 150px 350px;
+  align-items: center;
+}
+
+.home-banner-sendmessage {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.aboutus-paragraph-1 {
+  font-family: "Lexend Deca", Calibri, sans-serif;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 90%;
+  height: 95px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.sendmessage-headline-2 {
+  background-color: #FA7921;
+  font-family: "Audiowide", Arial, cursive;
+  color: white;
+  grid-column: 2/2;
+  grid-row: 2/3;
+  width: 99%;
+  height: 85px;
+  margin-left: -10px;
+  margin-top: -80px;
+  text-align: center;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 13fr);
+
+  margin-left: 300px;
+  margin-top: -70px;
+  background: #FAF5F0;
+}
+
+.button-send {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+
+  margin-left: 5px;
+  font-size: 15px;
+  margin-left: 250px;
+  grid-row: 5/5;
+  grid-column: 2/3;
+  width: 100px;
+}
+
+button:hover {
+  color: black;
+  font-size: 15px;
+  background: lightgrey;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+  background: lightblue;
+}
+
+select {
+  width: 250px;
+}
+
+select:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+  background: lightblue;
+  font: 1em sans-serif;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 250px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid purple;
+}
+
+
+label {
+  /* Uniform size & alignment */
+  /*display: inline-block;*/
+  width: 250px;
+  box-sizing: border-box;
+  text-align: left;
+  color: blue;
+}
+
+form {
+  /* Center the form on the page */
+  /*margin: 0 auto;*/
+  width: 600px;
+
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  background: blue;
+}
+
+
+/*FOR GASTRONOMIA PAGE*/
+.gastro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+  padding: 5px;
+  background: linear-gradient(#0da1ec, white);
+  margin-left: 5px;
+}
+
+.banner-gastro{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  height: 100px; 
+  margin-top: 10px;
+}
+
+.title-gas {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  height: 100px;
+  margin-top: 10px;
+  color:floralwhite ;
+  margin-left: 30px;
+  font-family: "Audiowide", Arial, cursive;
+}
+
+.para-gastro{
+  grid-column: 1/6;
+  grid-row: 3/4;
+  margin-left: 40px;
+  margin-right: 15px;
+  margin-top: 40px;
+  font-size: 25px;
+  /* font-family: "Sofia", Verdana, cursive; */
+  text-align: justify;
+}
+
+.card1-gastro{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin-top: 20px;
+  margin-left: 100px;
+  background: rgb(207, 241, 241);
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px #888;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.card2-gastro{
+  grid-column: 3/4;
+  grid-row: 5/6;
+  margin-top: 20px;
+  margin-left: -80px;
+  background: rgb(207, 241, 241);
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px #888;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.card3-gastro{
+  grid-column: 5/6;
+  grid-row: 5/6;
+  margin-top: 20px;
+  margin-right: 10px;
+  background: rgb(207, 241, 241);
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px #888;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.card-gastro-todo {
+  grid-column: 1/6;
+  grid-row: 5/6;
+  margin-top: 5px;
+  margin-left: 70px;
+  border-radius: 20px 20px 20px 20px;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px #888;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
 }
