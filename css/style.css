@@ -93,9 +93,10 @@ body {
   margin-top: 20px;
   margin-left: 5px;
   margin-right: 10px;
-  background: rgb(68, 68, 68);
+  background: #874421;
   border: solid black;
   border-radius: 20px 20px 20px 20px;
+
 }
 
 
@@ -278,8 +279,11 @@ a:hover {
   position: absolute;
   top: 200px;
   left: 250px;
-  color: hsl(50, 100%, 55%);;
-}
+
+  
+  color:  white;
+  
+  }
 
 .tex1-bienvenido{
   margin-left: -140px;
@@ -603,4 +607,163 @@ form {
   transition: all 0.25s;
   overflow: hidden;
   padding: 1px;
+}
+
+.origen-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: linear-gradient(#0da1ec, white);
+  align-items: center;
+}
+
+.banner-origen{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /*height: 50px; 
+  margin-top: 10px;*/
+}
+
+.title-origen{
+  grid-column: 1/6;
+  grid-row: 1/2;
+ /* height: 50px; */
+  /*margin-top: 10px;*/
+  color:floralwhite ;
+  margin-left: 100px;
+  margin-right: 45px;
+  font-family: "Audiowide", Arial, cursive;
+  background: #F4B41A;
+  color: black;;
+}
+
+.para-origen{
+  grid-column: 1/6;
+  grid-row: 2/3;
+  height: 50%; 
+  margin-top: -150px;
+  margin-left: 25px;
+  margin-right: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+
+}
+
+.banner2-origen{
+  grid-column: 1/2;
+  grid-row: 3/3;
+  height: 50%; 
+  margin-top: -300px;
+
+}
+
+.para2-origen{
+  grid-column: 1/6;
+  grid-row: 3/3;
+  margin-top: 40px;
+  margin-right: 15px;
+  margin-left: 320px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  height: 50%; 
+}
+
+.card4-gastro{
+  grid-column: 6/6;
+  grid-row: 5/6;
+  margin-top: 20px;
+  margin-right: 10px;
+  background: rgb(207, 241, 241);
+  border-radius: 20px 20px 20px 20px;
+  width: 70%;
+  height: 80%;
+  text-align: center;
+  box-shadow: 1px 1px 4px 1px #888;
+  transition: all 0.25s;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.title-histo {
+  grid-column: 1/8;
+  /*grid-row: 1/2;*/
+  /*height: 100px;*/
+  width: 120%;
+  margin-top: 10px;
+  color:floralwhite ;
+  margin-left: 5px;
+  font-family: "Audiowide", Arial, cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*FOR DESCUBRIMIENTO PAGE*/
+.descubre-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+  padding: 5px;
+  background: linear-gradient(#0da1ec, white);
+  margin-left: 5px;
+}
+
+.banner-descubre {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  height: 100px; 
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.title-des{
+  grid-column: 1/6;
+  grid-row: 1/2;
+  height: 100px;
+  margin-top: 10px;
+  color:floralwhite ;
+  margin-left: 30px;
+  font-family: "Audiowide", Arial, cursive;
+  text-align: center;
+}
+
+.parafos-descubre{
+  grid-column: 1/5;
+  grid-row: 3/4;
+  margin-left: 40px;
+  margin-right: 15px;
+  margin-top: 40px;
+  font-size: 25px;
+  /* font-family: "Sofia", Verdana, cursive; */
+  text-align: justify;
+}
+
+.imag-descu{
+  grid-column: 5/6;
+  grid-row: 3/4;
+  margin-top: 50px;
+  margin-right: 15px;
+}
+
+/* FOR INDEPENDENCIA WEBSITE*/
+.proce-des{
+  grid-column: 1/6;
+  grid-row: 3/4;
+  height: 100px;
+  margin-top: 10px;
+  color:floralwhite ;
+  margin-left: 30px;
+  font-family: "Audiowide", Arial, cursive;
+  text-align:left;
+}
+
+.intro-descubre{
+  grid-column: 1/6;
+  grid-row: 2/3;
+
+  margin-left: 40px;
+  margin-right: 15px;
+  margin-top: -40px;
+  font-size: 25px;
+  /* font-family: "Sofia", Verdana, cursive; */
+  text-align: justify;
 }
