@@ -6,6 +6,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Kalam:wght@300&family=Lexend+Deca:wght@200&family=Montserrat+Alternates:wght@200&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Audiowide&family=Kalam:wght@300&family=Lexend+Deca:wght@200&family=Montserrat+Alternates:wght@200&family=Sofia&family=Staatliches&display=swap');
 
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+#navegador li:hover 
+  { 
+  background-color: blue; }
+
+#subseccion1 {
+  position: absolute; 
+  top: 100%; 
+  left: 0px;  
+  background: black;
+  font:normal 0.8em arial;  
+  padding: 0.2em 0.5em ; 
+  display: none; 
+}	
+
+
 html {
   background-color: #81B8EF;
 }
@@ -766,4 +799,9 @@ form {
   font-size: 25px;
   /* font-family: "Sofia", Verdana, cursive; */
   text-align: justify;
+}
+
+.back{
+  margin-left: 5px;
+  font-family: 'Arial Narrow Bold', sans-serif;
 }
