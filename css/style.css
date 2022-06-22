@@ -113,22 +113,23 @@ body {
   grid-column: 1/2;
   /*grid-row: 2/3;*/
   margin-top: 80px;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
   /*background: yellowgreen;*/
   /*border: solid black;*/
   /*width: auto;*/
-  text-align: center;
+  /*text-align: center;*/
   font-family: "Audiowide", Arial, cursive;
 }
 
 .logo-home-grid {
   grid-column: 4/6;
   margin-top: 20px;
-  margin-left: 5px;
-  margin-right: 10px;
-  background: #874421;
-  border: solid black;
-  border-radius: 20px 20px 20px 20px;
+  margin-left: -25px;
+  /*margin-right: 40px;*/
+  width: 100%;
+  /*background: #874421;*/
+  /*border: solid black;*/
+  /*border-radius: 20px 20px 20px 20px;*/
 
 }
 
@@ -319,7 +320,7 @@ a:hover {
   }
 
 .tex1-bienvenido{
-  margin-left: -140px;
+  margin-left: 50px;
 }
 
 .tex2-bienvenido{
@@ -334,8 +335,9 @@ a:hover {
   grid-row: 3/4;
   grid-column: 1/2;
 
-  height: 100px;
-  margin-top: -50px;
+  /*height: 120%;*/
+  width: 100%;
+  margin-top: 20px;
 }
 
 .parrafo{
