@@ -6,6 +6,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Kalam:wght@300&family=Lexend+Deca:wght@200&family=Montserrat+Alternates:wght@200&family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Audiowide&family=Kalam:wght@300&family=Lexend+Deca:wght@200&family=Montserrat+Alternates:wght@200&family=Sofia&family=Staatliches&display=swap');
 
+html {
+  background-color: #81B8EF;
+}
+
+body {
+  background-color: #ffffff;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 20px;
+  border: 10px solid black;
+}
+
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: linear-gradient(#0da1ec, white);
+  align-items: center;
+  align-content: center;
+  
+}
+
+.logo-box {
+  grid-column: 1/2;
+  /*margin-top: -10px;*/
+  margin-left: -15px;
+}
+
+.head-grid{
+  grid-column: 2/3;
+  margin-left: -15px;
+}
+
+.head-container{
+  display: flex;
+  
+}
+
+.box-head{
+  font-size: 25px;
+  padding: 5px;
+  background-color:  #283350;
+  text-align: center;
+  flex-flow: row wrap;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px
+}
+
+.box-head a{
+  color: white;
+}
+
+.b1, .b2, .b3, .b5, .b7 {
+  flex-basis: 5%;
+}
+
+.b4, .b6{
+  flex-basis: 17%;
+}
+
+.b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover, .b6:hover, .b7:hover{
+  background-color: #F4B41A;
+}
+
+
+.text-logo{
+  grid-row: 2/3;
+  grid-column: 1/3;
+  font-family: "Kalam", cursive;
+  margin-left: 15px;
+  margin-top: -30px;
+}
+
+.link-header {
+  grid-column: 3/7;
+  margin-top: 15px;
+  margin-left: -180px;
+  background: #283350;
+}
+
+.link-header a{
+  color: #ffffff;
+  background: #283350;
+}
+
 
 .box-shadow-menu {
   position: relative;
@@ -39,63 +128,12 @@
 }	
 
 
-html {
-  background-color: #81B8EF;
-}
-
-body {
-  background-color: #ffffff;
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 1em;
-  font-size: 20px;
-  border: 10px solid black;
-}
-
-.header-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 150px;
-  background: linear-gradient(#0da1ec, white);
-  align-items: center;
-}
-
-
-.logo-box {
-  grid-column: 1/2;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-.link-header {
-  grid-column: 3/7;
-  margin-top: 15px;
-  margin-left: -180px;
-  background: #283350;
-}
-
-.link-header a{
-  color: #ffffff;
-  background: #283350;
-}
 
 
 
-.text1{
-  grid-row: 2/3;
-  grid-column: 1/3;
-  font-family: "Kalam", cursive;
-  margin-left: 15px;
-  margin-top: -30px;
-}
-.navigation-head {
-  background-color: #000000;
-  height: 30px;
-  padding: 5px;
-  text-align: center;
-  margin-top: 15px;
-  color: #ffffff
-}
+
+
+
 
 .home-grid {
   display: grid;
