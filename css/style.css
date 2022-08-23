@@ -61,11 +61,11 @@ body {
   color: white;
 }
 
-.b1, .b2, .b3, .b5, .b7 {
-  flex-basis: 5%;
+.b1, .b3, .b5, .b7 {
+  flex-basis: 3%;
 }
 
-.b4, .b6{
+.b4, .b2, .b6{
   flex-basis: 17%;
 }
 
@@ -79,6 +79,20 @@ body {
   font-family: "Kalam", cursive;
   margin-left: 15px;
   margin-top: -30px;
+}
+
+.text-english{
+  /*grid-row: 2/3;*/
+  grid-column: 1/3;
+  font-family: "Kalam", cursive;
+  margin-left: 15px;
+}
+
+.text-spanish{
+  /*grid-row: 2/3;*/
+  grid-column: 1/3;
+  font-family: "Kalam", cursive;
+  margin-left: 15px;
 }
 
 
@@ -104,8 +118,13 @@ h1{
   grid-column: 1/4;
   grid-row: 1/2;
   margin-top: 100px;
-  
 }
+
+/* .version-english{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin-top: 100px;
+} */
 
 .text2-welcome{
   grid-column: 1/4;
